@@ -1,0 +1,68 @@
+html {
+    background-color: white;
+}
+
+body {
+    background-color: black;
+    color: white;
+    /*width: 800px;*/
+    max-width: 800px;
+    /*width: 80%;*/
+    margin: auto;
+    
+    /*padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 3em;
+    padding-left: 4em;
+    padding: 1em 10em 20em 30em;*/
+    padding: 2em;
+    padding-top: 1em;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: purple;
+    /*border-width: 5px;
+    border-style: dashed;
+    border-color: violet;*/
+    border: 5px dashed violet;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+header a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a:link { /*unvisited*/
+    color: red;
+}
+
+header a:visited {
+    color: gray;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header a:focus {
+    color: red;
+}
+
+header a:active {
+    color: yellow;
+}
+
+header img {
+   width: 200px;
+   height: 100px; 
+}
+
+#logo {
+    transform: rotate(5deg);
+}
