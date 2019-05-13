@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PCS Restaurant</title>
+    <link href="css/restaurant.css" rel="stylesheet">
+    <style>
+        .active {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        .redText {
+            color: red;
+        }
+
+        .bigText {
+            font-size: 4em;
+        }
+
+        .menuItem {
+            border: 1px dashed #FF0000;
+            color: white;
+            /*height: 324px;*/
+            overflow: auto;
+            padding: 1em;
+            margin-top: 1em;
+            box-shadow: 2px 2px 2px 2px rgba(255, 0, 0, .5);
+            opacity: .5;
+        }
+
+        .menuItem img {
+            float: left;
+            margin-right: 1em;
+        }
+
+        .clearFix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--h1 style="color: red">PCS Restaurant</h1-->
+        <h1>PCS Restaurant</h1>
+        <img id="logo" src="images/restaurant.jpg" alt="the restaurant">
+        <br>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li> | 
+                <li><a href="menu.html">menu</a></li> | 
+                <li><a href="aboutUs.html">about us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <article>
+        <a href="steakDetails.html">
+            <div class="menuItem xactive">
+                <h2>Steak</h2>
+                <img src="images/steak.jpg" alt="a delicious steak">
+                <p class="xredText xbigText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corrupti
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum rem consequatur dolores nemo iure
+                </p>
+            </div>
+        </a>
+        <div class="xclearFix"></div>
+        <a href="burgerDetails.html">
+            <div class="menuItem">
+                <h2>Burger</h2>
+                <img src="images/burger.jpg" alt="a delicious burger">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corrupti porro nesciunt atque tempora
+                    eligendi.
+                    Illo, sunt voluptatem accusantium vel ipsam odit temporibus harum nostrum!</p>
+            </div>
+        </a>
+    </article>
+</body>
+
+</html>
