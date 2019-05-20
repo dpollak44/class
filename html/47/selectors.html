@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /*universal selector - everything*/
+    * {
+        box-sizing: border-box;
+    }
+
+    /*type selector - all sections*/
+    section {
+        color: red;
+    }
+
+    /*id selector - element with id it*/
+    #it {
+        font-size: 2em;
+    }
+
+    /*class selector - all with class special*/
+    .special {
+        font-style: italic;
+    }
+
+    /* a section with class special */
+    section.special {
+        transform: rotate(5deg);
+    }
+
+    /* , = either - either with id of it or class of special*/
+    #it, .special {
+        border: 1px solid black;
+    }
+
+    /*descendent selectors*/
+    /*a p anywhere inside something with class special*/
+    .special p {
+        background-color: green;
+    }
+
+    /*anything anywhere inside a special*/
+    .special * {
+        background-color: yellow;
+    }
+
+    /*p immediate child of special*/
+    .special > p {
+        background-color: green;
+    }
+
+    /*sibling selectors*/
+    /*h1 that immediately follows section*/
+    section + h1 {
+        font-family: cursive;
+    }
+
+    /*h1 that follows section even not immediate*/
+    section ~ h1 {
+        color: blue;
+    }
+
+    /*pseudo element*/
+    .special:first-letter {
+        font-size: 2em;
+    }
+
+    .special:first-line {
+        font-weight: bold;
+    }
+
+    /*pseudo class*/
+    .special:hover {
+        cursor: wait;
+    }
+
+    section:not(.special) {
+        border: 1px dashed green;
+    }
+    </style>
+</head>
+<body>
+    <h1 class="special">IM SPECIAL TOO!</h1>
+    <article>
+        <section id="it"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, doloremque pariatur delectus officiis odit aspernatur perferendis nesciunt dolor voluptatum corporis. Ipsum molestiae numquam est eum?</p></section>
+        <section class="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, soluta. Quod, ab quaerat? Perspiciatis architecto quis consequatur asperiores sapiente nemo facilis recusandae repudiandae aperiam enim iste atque sequi deleniti sed nisi excepturi hic facere autem, distinctio repellat maiores? Harum possimus inventore quae, ut dignissimos repellat fugit sint ipsum quibusdam perspiciatis.   <h1>SPECIAL</h1><div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, doloremque pariatur delectus officiis odit aspernatur perferendis nesciunt dolor voluptatum corporis. Ipsum molestiae numquam est eum?</p></div></section>
+        <section><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, doloremque pariatur delectus officiis odit aspernatur perferendis nesciunt dolor voluptatum corporis. Ipsum molestiae numquam est eum?</p></section>
+        <h1>h1 after section</h1>
+        <h1>h1 2 after section</h1>
+    </article>
+</body>
+</html>

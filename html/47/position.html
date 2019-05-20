@@ -234,6 +234,7 @@
         header {
             top: 0;
             height: 5em;
+            z-index: 1; /*be on top of #html2*/
         }
 
         footer {
@@ -244,6 +245,10 @@
         body {
             margin-top: 5em;
             margin-bottom: 3em;
+        }
+
+        #html2 {
+            position: relative;
         }
     </style>
 </head>

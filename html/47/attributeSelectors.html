@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    a {
+        padding-left: 20px;
+        background-repeat: no-repeat;
+    }
+
+    /*.word {
+        background-image: url("images/doc.gif");
+        background-repeat: no-repeat;
+    }
+
+    .pdf {
+        background-image: url("images/pdf.png");
+        background-repeat: no-repeat;
+    }*/
+
+    /*a[href="document1.doc"] {
+        background-image: url("images/doc.gif");
+        background-repeat: no-repeat;
+    }*/
+
+    /*attribute selector - ends with*/
+    /*a[href$=".doc"], a[href$=".docx"] {
+        background-image: url("images/doc.gif");
+        background-repeat: no-repeat;
+    }*/
+
+    /*attribute selector - contains*/
+    a[href*=".doc"] {
+        background-image: url("images/doc.gif");
+    }
+
+    /*attribute selector - ends with*/
+    a[href$=".pdf"] {
+        background-image: url("images/pdf.png");
+    }
+
+    /*attribute selector - starts with*/
+    a[href^="http"] {
+        background-image: url("images/google.png");
+    }
+
+    h1[pcs] {
+        color: red;
+    }
+
+    h1[pcs="5"] {
+        font-style: italic;
+    }
+    </style>
+</head>
+<body>
+    <h1 pcs="5">My Docs</h1>
+    <h1 pcs>Attribute Selectors</h1>
+    <hr>
+    <ul>
+        <!--li class="word"><a href="document1.doc">document1.doc</a></li>
+        <li class="word"><a href="document2.docx">document2.doc</a></li>
+        <li class="pdf"><a href="pdf1.pdf">pdf1.pdf</a></li-->
+        <li><a href="https:\\www.google.com">google</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/">MDN</a></li>
+        <li><a href="document1.doc">document1.doc</a></li>
+        <li><a href="document2.doc">document2.doc</a></li>
+        <li><a href="document3.docx">document3.docx</a></li>
+        <li><a href="pdf1.pdf">pdf1.pdf</a></li>
+    </ul>
+</body>
+</html>

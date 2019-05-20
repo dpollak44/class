@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            /*border: 1px solid black;*/
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: .5em;
+            text-align: center;
+        }
+
+        td:first-child, td:last-child {
+            font-weight: bold;
+            color: red;
+        }
+
+        tfoot td {
+            font-style: italic;
+        }
+
+        caption {
+            caption-side: bottom;
+            border: 1px solid black;
+            border-top: none;
+            color: blue;
+            font-size: 3em;
+        }
+
+        /*.even {
+            background-color: lightblue;
+        }*/
+
+        /*evens*/
+        /*tr:nth-child(2n) { /* 2 * 0, 2 * 1, 2 * 2, 2 * 3 * /
+            background-color: lightblue;
+        }*/
+
+        /*odds
+        tbody tr:nth-child(2n + 1) { /* 2 * 0 + 1, 2 * 1 + 1, 2 * 2 + 1, 2 * 3 + 1* /
+            background-color: lightblue;
+        }*/
+
+        /*tbody tr:nth-child(n+10):nth-child(-n+15) { /*start from 8 - 0 + 8, 1 + 8, 2 + 8, 3 + 8 - go to 15 -0 + 15 = 15* /
+            background-color: lightblue;
+        }*/
+
+        tbody tr:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        /*tbody*/ tr:hover {
+            background-color: lightgray /*!important*/;
+        }
+    </style>
+</head>
+<body>
+    <!--h1>Student Attendance</h1-->
+    <table style="">
+        <caption>Student Attendance</caption>
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>5</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8</td>
+                <td>5</td>
+                <td>6</td>
+                <td>0</td>
+                <td>444</td>
+            </tr>
+            <tr class="even">
+                <td>2</td>
+                <td>5</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8</td>
+                <td>5</td>
+                <td>6</td>
+                <td>0</td>
+                <td>333</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>5</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8</td>
+                <td>5</td>
+                <td>6</td>
+                <td>0</td>
+                <td>333</td>
+            </tr>
+            <tr class="even">
+                <td>4</td>
+                <td>5</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8</td>
+                <td>5</td>
+                <td>6</td>
+                <td>0</td>
+                <td>333</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>123</td>
+                <td>456</td>
+                <td>342</td>
+                <td>454</td>
+                <td>654</td>
+                <td>444</td>
+                <td>0</td>
+                <td>222</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
