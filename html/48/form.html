@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            width: 80%;
+            margin: auto;
+        }
+
+        input:not([type="submit"]):not([type="reset"]):not([type="radio"]):not([type="checkbox"]), textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: .5em;
+        }
+
+        option:nth-child(even) {
+            background-color: red;
+        }
+
+        button img {
+            width: 48px;
+            padding: .5em;
+            vertical-align: middle;
+        }
+
+        button, input[type="submit"] {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="processForm.php" method="post">
+        <!-- <label>First Name:<input name="firstName"></label> -->
+        <label for="firstName">First Name:</label><input name="firstName" id="firstName" value="Donald" placeholder="Enter your first name here" required minlength="3" maxlength="10">
+        <label for="lastName"></label>Last Name:<input name="lastName" id="lastName" placeholder="Enter your last name here">
+        <label for="password"></label>Password:<input type="password" name="password" id="password" placeholder="Enter your password here">
+        <label for="age"></label>Age:<input type="number" name="age" id="age" placeholder="Your age" min="0" max="120" step=".01">
+        <label for="email"></label>Email:<input type="email" name="email" id="email" placeholder="Enter your email here">
+        <label for="color"></label>Color:<input type="color" name="color" id="color" value="#ABCDEF">
+        <label for="birthday"></label>Birthday:<input type="date" name="birthday" id="birthday" placeholder="Enter your birthday here">
+        
+        <label for="month"></label>Favorite Month:<input type="month" name="month" id="month" placeholder="Enter your month here">
+        <label for="week"></label>Favorite Week:<input type="week" name="week" id="week" placeholder="Enter your week here">
+
+        <label for="tel"></label>Telephone:<input type="tel" name="tel" id="tel" placeholder="Enter your telephone here">
+        
+        <label for="rating"></label>Rating:<input type="range" name="rating" id="rating" min="1" max="5">
+        
+        <label for="comments"></label>Comments:
+        <textarea placeholder="Please write a comment here">Default text</textarea>
+        
+        <label for="poll">Do you think they will impeach Trump?</label>
+        <input type="radio" name="poll" value="yes" checked>Yes
+        <input type="radio" name="poll" value="no">No
+        <input type="radio" name="poll" value="maybe">Maybe
+        <br>
+        <label for="sides">What sides do you want?</label>
+        <input type="checkbox" name="side[]" value="fries">Fries
+        <input type="checkbox" name="side[]" value="onion_rings" checked>Onion Rings
+        <input type="checkbox" name="side[]" value="mashed_potatoes">Mashed Potatoes
+        <br>
+
+        <label for="drink">Choose a drink</label>
+        <select name="drink" id="drink">
+            <option value="1">Pepsi</option>
+            <option value="2" selected>Coke</option>
+            <option>Water</option>
+        </select>
+        <br>
+        <input type="submit">
+        <input type="submit" value="Register!">
+        <input type="reset">
+
+        <button>Im also a submit button</button>
+        <button type="reset">Im a reset</button>
+        <button type="button">Im a button!</button>
+        <button><img src="../47/images/doc.gif" alt=""> Click to start a new Word document</button>
+        <button><img src="../47/images/pdf.png" alt=""> Click to start a new PDF document</button>
+    </form>
+</body>
+</html>
