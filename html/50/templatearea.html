@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+
+            grid-template-areas:
+                "header"
+                "main"
+                "sidebar"
+                "footer";
+        }
+
+        @media screen and (min-width: 600px) {
+            body {
+                grid-template-columns: 1fr 1fr 2fr 1fr;
+                grid-template-areas:
+                    ". header  header ."
+                    ". sidebar main   ."
+                    ". sidebar main   ."
+                    ". footer  footer .";
+            }
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        article {
+            grid-area: main;
+        }
+
+        aside {
+            grid-area: sidebar;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+    <div class="foo">Lorem, ipsum.</div>
+</body>
+
+</html>

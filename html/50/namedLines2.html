@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(12, [col-start] 1fr);
+            grid-gap: 20px;
+        }
+
+        body>* {
+            grid-column: col-start / span 12;
+        }
+
+        @media screen and (min-width: 500px) {
+            aside {
+                grid-column: col-start / span 3;
+                grid-row: 3;
+            }
+
+            .ad {
+                grid-column: col-start / span 3;
+                grid-row: 4;
+            }
+
+            article {
+                grid-column: col-start 4 / -1;
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        @media screen and (min-width: 700px) {
+            nav {
+                grid-column: col-start / span 2;
+                grid-row: 2 / 4
+            }
+
+            article {
+                grid-column: col-start 3 / span 8;
+                grid-row: 2 / 4;
+            }
+
+            aside {
+                grid-column: col-start 11 / -1;
+                grid-row: 2;
+            }
+
+            .ad {
+                grid-column: col-start 11 / -1;
+                grid-row: 3;
+            }
+
+            footer {
+                grid-column: col-start / -1;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header goes here</header>
+    <nav>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Main Content Here</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam repellendus magni ipsum laboriosam neque.
+            Vero, architecto dolorum, laboriosam nostrum autem provident mollitia quaerat delectus aspernatur quasi
+            accusamus cumque maiores reprehenderit officiis nulla dolorem eveniet, excepturi voluptatem ad sed enim.
+            Officiis, voluptatum repellendus? A saepe voluptates eius illo facilis similique sequi fuga dolores libero
+            architecto distinctio numquam tempore, aliquam corrupti blanditiis aut, at repellat ipsam eligendi excepturi
+            laborum porro magni! Commodi fuga ipsum necessitatibus, sed, in assumenda beatae nam adipisci a quasi
+            accusantium tempore. Reiciendis, modi. Accusamus nisi blanditiis quod eum. Perspiciatis possimus labore
+            explicabo porro est placeat, distinctio nihil.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit et beatae doloribus facilis, saepe accusamus
+            quisquam. Voluptas reiciendis commodi distinctio impedit at provident quaerat deleniti, deserunt sapiente!
+            Laborum tempora repellendus, modi fuga amet eaque enim ab ea hic ex, quae asperiores aliquam expedita
+            quaerat vitae illo. Minima temporibus necessitatibus eius. Repudiandae tenetur, porro esse in voluptatem
+            non. Nemo, unde laudantium iste perspiciatis harum quas amet. Assumenda cumque consequatur placeat quaerat
+            quisquam doloribus minus commodi neque magnam repudiandae aut sint totam, excepturi minima unde, veritatis
+            quas asperiores? Repellat ad ex error. Possimus nesciunt impedit dolorum repudiandae consequatur, est
+            laudantium provident commodi.
+        </p>
+    </article>
+    <aside>lorem25</aside>
+    <div class="ad">Ad goes here</div>
+    <footer>Footer goes here</footer>
+</body>
+
+</html>

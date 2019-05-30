@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            /*grid-template-columns: 1fr 2fr;*/
+            grid-template-columns: [content-start] 1fr [content-end];
+            grid-template-rows: auto [content-start] auto [content-end];
+        }
+
+        @media screen and (min-width: 600px) {
+            body {
+                grid-template-columns: 1fr [content-start] 2fr [content-end];
+            }
+
+            header {
+                grid-column: 1 / 3;
+            }
+
+            footer {
+                grid-column: 1 / 3;
+            }
+
+            aside {
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }
+
+        article {
+            grid-column: content-start;
+            grid-row: content-start;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <aside>Aside</aside>
+    <article>Article</article>
+    <footer>Footer</footer>
+</body>
+
+</html>
