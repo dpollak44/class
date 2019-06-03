@@ -4,6 +4,8 @@ Use HTML 5 semantic containers whenever possible: header, footer, nav, section, 
 General
 Font used on page should be helvetica (mac), arial (windows), sans-serif (backup)
 
+Title in browser tab should be same as main text in header on page.
+
 Nav and Footer
 Nav and footer stay in place at top and bottom.
 - These are black with white text and take up full screen width.
@@ -16,7 +18,7 @@ Main Content
 - Content not full screen - nicely centered (can be fluid, or fixed width (pixels or percentage)). 
 - Content not covered by navbar or footer.
 
-Page title
+Page header
 - Colored background, content centered.
 - Some space above and below content.
 - Contains Title and subtitle.
@@ -26,12 +28,12 @@ Page title
 
 Products
 Products are layed out evenly dividing the available space for the 3 products on screens 1000px or larger.
-- There are horizontal lines BETWEEN the products
+- There are vertical lines BETWEEN the products
 - On smaller screens (< 1000px) they each take up full width like other content. Horizontal lines go away.
 - Each product name is centered.
 - Each product has an image or video in it - at least one should be video. Choose the image to be shown for the video before its played.
 - Make sure images / video behave (fill up available width but dont overlap one another) even as screensize changes.
-- Text below products is justified.
+- Text belPow products is justified.
 
 Sign up
 - Form is posted (to non existent page) when submitted.
