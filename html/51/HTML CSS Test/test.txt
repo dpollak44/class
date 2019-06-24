@@ -9,7 +9,7 @@ Title in browser tab should be same as main text in header on page.
 Nav and Footer
 Nav and footer stay in place at top and bottom.
 - These are black with white text and take up full screen width.
-- Content in them does not begin all the way on left of screen. Content is centered vertically exactly same as main content.
+- Content in them does not begin all the way on left of screen. Content is centered horizontally exactly same as main content.
 - The links in the nav must be in a UL.
 - The links in the nav are not underlined - except when user puts mouse over link. Then they change to red and get underlined
 - Links in header nav bring you to that section of page
@@ -29,18 +29,17 @@ Page header
 Products
 Products are layed out evenly dividing the available space for the 3 products on screens 1000px or larger.
 - There are vertical lines BETWEEN the products
-- On smaller screens (< 1000px) they each take up full width like other content. Horizontal lines go away.
+- On smaller screens (< 1000px) they each take up full width like other content. Vertical lines go away.
 - Each product name is centered.
 - Each product has an image or video in it - at least one should be video. Choose the image to be shown for the video before its played.
 - Make sure images / video behave (fill up available width but dont overlap one another) even as screensize changes.
-- Text belPow products is justified.
+- Text below products is justified.
 
 Sign up
 - Form is posted (to non existent page) when submitted.
 - Both fields are required . Email should be validated.
 - Form content is centered.
 - Form has colored background with rounded corners on form and on inputs. Inputs have shadows.
-- The form is displayed centered inside a colored area with rounded corners.
 - On smaller screens (< 1000px) each form part (label + input or button) is on its own line
 
 Financials
