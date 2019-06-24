@@ -19,6 +19,9 @@ function getGreeter() {
 const greeter = getGreeter();
 greeter();
 
+getGreeter()
+getGreeter()();
+
 //let x = 5;
 //x();
 
@@ -99,7 +102,7 @@ repeat(greet, 10);
 
 
 ///// 
-
+// callbacks
 
 function ourForEach(theArray, callback) {
     for (let i = 0; i < theArray.length; i++) {
