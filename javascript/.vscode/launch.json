@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\56\\functions.js"
+            "program": "${workspaceFolder}\\57\\this.js"
         }
     ]
 }
