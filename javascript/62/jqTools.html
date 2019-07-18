@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="donald">Donald Trump</h1>
+    <h1 id="bernie">Bernie Sanders</h1>
+    <hr>
+    Enter Your Name:<input id="name">
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script-->
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        const donald = /*jQuery*/$('#donald')
+            .css('color', 'green')
+            .click(event => console.log('The Donald was clicked!', event));
+
+        console.log(donald.css('color'));
+
+        const bernie = $('#bernie');
+        bernie.css('color', 'red');
+        console.log(bernie.css('color'));
+
+        bernie.hide();
+
+        setTimeout(() => bernie.show(), 2000);
+
+        const theNameInput = $('#name');
+
+        /*theNameInput
+            .change(() => console.log('name changed #1', this))
+            .mouseenter(() => theNameInput.css('background-color', 'yellow'))
+            .mouseleave(() => theNameInput.css('background-color', 'white'));*/
+
+        theNameInput
+            .change(() => console.log('name changed #1', this))
+            .mouseenter(() => theNameInput.addClass('highlight'))
+            .mouseleave(() => theNameInput.removeClass('highlight'));
+
+        theNameInput.on('change', function (event) {
+            //$(this).hide();
+            theNameInput.hide();
+            console.log('name changed #2 - ', this.value, event);
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
