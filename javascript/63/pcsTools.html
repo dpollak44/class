@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="donald">Donald Trump</h1>
+    <h1 id="bernie">Bernie Sanders</h1>
+    <h1 id="mueller">Robert Mueller</h1>
+    <script src="pcsTools2.js"></script>
+    <script>
+        /*const donald = pcs.tools.get('donald');
+        pcs.tools.setCss(donald, 'color', 'green');
+
+        const bernie = pcs.tools.get('bernie');
+        pcs.tools.setCss(bernie, 'color', 'red');*/
+
+        const donald = pcs('donald')
+            .css('color', 'green')
+            .click(event => {
+                console.log('The Donald was clicked!', event);
+                donald.data('clicks', donald.data('clicks') + 1)
+                console.log(donald.data('clicks'), donald.data('innerHTML'));
+            })
+            .sparkle(5000, 'fast')
+            .data('clicks', 0)
+            .data('innerHTML', 'bar');
+
+        console.log(donald.css('color'));
+
+        const bernie = pcs('bernie');
+        bernie.css('color', 'red');
+        console.log(bernie.css('color'));
+
+        bernie.hide();
+
+        setTimeout(() => bernie.show().sparkle(3000, 'slow'), 2000);
+
+        pcs('mueller').sparkle(5000, { foo: 'bar' });
+
+        const anotherWrapperOnDonald = pcs('donald');
+        setInterval(() => {
+            console.log('From another reference donald was clicked', anotherWrapperOnDonald.data('clicks'), 'times');
+        }, 1000);
+
+    </script>
+</body>
+
+</html>

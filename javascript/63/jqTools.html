@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="donald">Donald Trump</h1>
+    <h1 id="bernie" class="communist">Bernie Sanders</h1>
+    <h1 id="mueller" class="communist">Robert Mueller</h1>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        /*const donald = $('#donald')
+            .css('color', 'green')
+            .click(event => {
+                console.log('The Donald was clicked!', event);
+                donald.data('clicks', donald.data('clicks') + 1)
+                console.log(donald.data('clicks'), donald.data('innerHTML'));
+            })
+            // .sparkle(5000, 'fast')
+            .data('clicks', 0)
+            .data('innerHTML', 'bar');
+
+        console.log(donald.css('color'));
+
+        const bernie = $('#bernie');
+        bernie.css('color', 'red');
+        console.log(bernie.css('color'));
+
+        bernie.hide();
+
+        setTimeout(() => bernie.show(), 2000);//.sparkle(3000, 'slow'), 2000);
+
+        //$('#mueller').sparkle(5000, { foo: 'bar' });
+
+        const anotherWrapperOnDonald = $('#donald');
+        setInterval(() => {
+            console.log('From another reference donald was clicked', anotherWrapperOnDonald.data('clicks'), 'times');
+        }, 1000);*/
+
+        const theH1s = $('h1');
+        theH1s.css('color', 'green');
+
+        console.log(theH1s);
+
+        theH1s[1].innerHTML = 'Changed second h1';
+
+        $('.communist').hide();
+
+        theH1s.click(function () {
+            //$(this).append('<button id="foo">Click Me!</button>');
+
+            $('<button>Click Me!</button>').appendTo($(this))
+                .click((e) => {
+                    console.log('The button was clicked');
+                    e.stopPropagation();
+                });
+        });
+    </script>
+</body>
+
+</html>
