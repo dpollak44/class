@@ -22,4 +22,6 @@
                 description.text(descriptionText);
             });
     }
+
+    $('form').submit(e => e.preventDefault());
 }());

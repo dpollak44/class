@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="videos.js"></script>
+    <style>
+        html,
+        body,
+        #sidebar {
+            height: 100%;
+            margin: 0;
+        }
+
+        #sidebar {
+            float: left;
+            width: 25%;
+            overflow-y: scroll;
+            box-sizing: border-box;
+            padding-left: 1em;
+        }
+
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #sidebar li {
+            margin-bottom: 1em;
+            cursor: pointer;
+        }
+
+        #sidebar li:hover {
+            text-decoration: underline;
+        }
+
+        #sidebar img {
+            width: 50px;
+            vertical-align: middle;
+            margin-right: 2px;
+        }
+
+        video {
+            width: 75%;
+        }
+
+        .watched {
+            color: lightgray;
+        }
+
+        .active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <aside id="sidebar">
+        <ul></ul>
+    </aside>
+    <video id="player" autoplay />
+
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="videos.js"></script-->
+</body>
+
+</html>
