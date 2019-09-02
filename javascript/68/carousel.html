@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #picture {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .control {
+            font-size: 10em;
+            display: none;
+            user-select: none;
+        }
+
+        #picture h2 {
+            width: 20em;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="tags">
+    <button id="go">go</button>
+
+    <div id="pictures">
+        <span id="left" class="control">&lsaquo;</span>
+        <figure id="picture">
+            <img>
+            <figcaption>
+                <h2></h2>
+            </figcaption>
+        </figure>
+        <span id="right" class="control">&rsaquo;</span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="carousel.js"></script>
+</body>
+
+</html>
