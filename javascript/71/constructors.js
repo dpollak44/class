@@ -79,6 +79,7 @@
     //Employee.prototype = Person.prototype;
     //Employee.prototype = new Person();//'a first name', 'a last name');
     Employee.prototype = Object.create(Person.prototype);
+    Employee.prototype.constructor = Employee;
 
     Employee.prototype.print = function () {
         console.log(this.first, this.last, this.department);
