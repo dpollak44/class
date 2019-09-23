@@ -57,9 +57,10 @@
         }
 
         set fullname(name) {
-            const names = name.split(' ');
-            this.first = names[0];
-            this.last = names[1];
+            //const names = name.split(' ');
+            //this.first = names[0];
+            //this.last = names[1];
+            [this.first, this.last] = name.split(' '); // destructure
         }
 
         /*get age() {
