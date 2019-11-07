@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter your name: <input id="nameInput" />
+    Hello <span id="nameDisplay"></span>
+</body>
+<script src="underscore-min.js"></script>
+<script src="backbone-min.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+    var nameInput = $('#nameInput');
+    var nameDisplay = $('#nameDisplay');
+
+    var model = new Backbone.Model({
+        name: ''
+    });
+
+    model.on('change:name', function () {
+        nameDisplay.text(model.get('name'));
+    });
+
+    nameInput.on('input', function () {
+        model.set('name', nameInput.val());
+    });
+</script>
+
+</html>
