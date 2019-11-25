@@ -1,0 +1,57 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog {
+    display: inline-block;
+    width: 33.33%;
+    margin-bottom: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.blog .website {
+    font-weight: bold;
+}
+
+.blog .company {
+    font-size: x-small;
+}
+
+.blog .title,
+.post .title {
+    font-style: italic;
+}
+
+.post {
+    margin-bottom: 1em;
+}
+
+#next {
+    float: right;
+}
+
+#comments {
+    border: 1px solid black;
+    font-size: x-small;
+    display: none;
+}
+
+.comment {
+    margin-bottom: .2em;
+}
+
+.comment .author {
+    font-weight: bold;
+}
