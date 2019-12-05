@@ -1,0 +1,13 @@
+header {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    color: green;
+}
