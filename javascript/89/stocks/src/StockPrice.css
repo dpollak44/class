@@ -1,0 +1,15 @@
+.up {
+    color: green;
+}
+
+.up::after {
+    content: '\2191';
+}
+
+.down {
+    color: red;
+}
+
+.down::after {
+    content: '\2193';
+}
