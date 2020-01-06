@@ -1,0 +1,9 @@
+<div>
+  {{title}}
+  <br />
+  <!--input #titleInput [value]="title" (keyup)="setTitle(titleInput.value)" /-->
+  <input #titleInput [(ngModel)]="title" required minlength="3" maxlength="10" />
+  {{titleInput.className}}
+  <hr>
+  <app-order [order]="order"></app-order>
+</div>

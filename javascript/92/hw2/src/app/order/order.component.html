@@ -1,0 +1,7 @@
+<div>
+    Order Date: {{order.date | date:"MM-dd-yy"}}
+    <br />
+    <app-person [person]="order.customer"></app-person>
+    <br />
+    <app-item [item]="order.item"></app-item>
+</div>

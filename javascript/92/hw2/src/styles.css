@@ -1,0 +1,15 @@
+.ng-invalid {
+    color: red;
+}
+
+/*.ng-invalid::after {
+    content: 'This field has an invalid value. FIX IT!'
+}*/
+
+.ng-valid {
+    color: green;
+}
+
+/*.ng-valid::after {
+    content: '\10003'
+}*/

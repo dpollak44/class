@@ -1,0 +1,13 @@
+<h2>Customer</h2>
+Name: {{person.firstName | uppercase}} {{person.lastName | uppercase}}
+<br />
+<app-address [address]="person.address"></app-address>
+<br />
+<h5 *ngIf="person.friends?.length">Friends</h5>
+<ul>
+    <li *ngFor="let friend of person.friends;let i = index">
+        {{friend}}
+        <button (click)="deleteFriend(i)">delete</button>
+    </li>
+</ul>
+<input #friendInput /><button (click)="addFriend(friendInput.value)">add friend</button>
