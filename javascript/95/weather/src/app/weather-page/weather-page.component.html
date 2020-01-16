@@ -1,0 +1,6 @@
+<div *ngIf="weather | async as weather; else noWeather">
+    <app-weather [weather]="weather"></app-weather>
+</div>
+<ng-template #noWeather>
+    <h1>No weather...</h1>
+</ng-template>

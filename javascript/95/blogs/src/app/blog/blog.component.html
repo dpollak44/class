@@ -1,0 +1,11 @@
+<ul>
+    <!--li *ngFor="let post of posts"-->
+    <!--li *ngFor="let post of posts | async"-->
+    <!--li *ngFor="let post of getPosts()"-->
+    <li *ngFor="let post of postsToShow">
+        <h2>{{post.id}} {{post.title}}</h2>
+        <p>{{post.body}}</p>
+    </li>
+</ul>
+<button [disabled]="index < NUM_POSTS" (click)="prev()">prev</button>
+<button [disabled]="index > getNumPosts() - NUM_POSTS" (click)="next()">next</button>
