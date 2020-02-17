@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/chat.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form id="loginForm">
+    <div id="error"></div>
+    <input id="name" />
+    <button>login</button>
+  </form>
+
+  <div id="messageContainer">
+    <div id="messages"></div>
+    <form id="messageForm">
+      <input id="message" />
+      <button>send</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="javascript/chat.js"></script>
+</body>
+
+</html>
