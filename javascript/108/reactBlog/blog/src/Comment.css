@@ -1,0 +1,7 @@
+.comment h3, .comment h4 {
+  margin: 0;
+}
+
+.comment h3 {
+  color: blue;
+}
